@@ -4,7 +4,7 @@ import React from 'react'
 const SignUp = () => {
   return (
     <section className='flex-center size-full'>
-      <AuthForm type="sign-Up"/>
+      <AuthForm type="sign-up"/>
     </section>
   )
 }

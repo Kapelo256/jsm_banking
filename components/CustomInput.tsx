@@ -4,13 +4,14 @@ import { Input } from "./ui/input";
 
 import { Control, FieldPath} from "react-hook-form";
 import { z } from "zod";
-import { AuthFormSchema } from "@/lib/utils";
+import { authFormSchema } from "@/lib/utils";
 
 interface CustomInput {
-    control: Control<z.infer<typeof AuthFormSchema>>,
-    name: FieldPath<z.infer<typeof AuthFormSchema>>,
+    control: Control<z.infer<typeof authFormSchema>>,
+    name: FieldPath<z.infer<typeof authFormSchema>>,
     label: string,
     placeholder: string,
+    autocomplete: string,
 }
 
 const CustomInput = ({control, name, label, placeholder}: CustomInput) => {
